@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/EuMaiaa/MaiaHub/refs/heads/main/README.md"))()
-    local Window = Library.CreateLib("MaiaHub |feito por MAIA", "Sentinel")
+    local Window = Library.CreateLib("EuMaiaa|Maiahub", "Sentinel")
 
     local Home = Window:NewTab("Home")
     local HomeSection = Home:NewSection("Home")
@@ -26,7 +26,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/EuMai
         end)
       end)
       -- new fly/walkspeed gui
--- Made by 6uz
+-- Made by Maia
 -- Instances:
  
 local ScreenGui = Instance.new("ScreenGui")
