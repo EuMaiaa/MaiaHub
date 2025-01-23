@@ -1,4 +1,4 @@
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("MaiaHub |feito por MAIA", "Sentinel")
 
     local Home = Window:NewTab("Home")
@@ -118,6 +118,7 @@ wsinput.Position = UDim2.new(0.163888887, 0, 0.0883977935, 0)
 wsinput.Size = UDim2.new(0, 241, 0, 63)
 wsinput.Font = Enum.Font.SourceSans
 wsinput.Text = "Speed Value"
+
 wsinput.TextColor3 = Color3.fromRGB(255, 255, 255)
 wsinput.TextScaled = true
 wsinput.TextSize = 14.000
@@ -233,7 +234,8 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
     table.insert(Plr,v.Name) 
 end
 local drop = teleportsection:NewDropdown("Select Player!", "Click To Select", Plr, function(t)
-   PlayerTP = t
+
+PlayerTP = t
 end)
 teleportsection:NewButton("Click To TP", "Tp to player", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
@@ -436,7 +438,9 @@ return Output
 end
 function IsStringEmpty(String)
 if type(String) == 'string' then
-return String:match'^%s+$' ~= nil or #String == 0 or String == '' or false;
+return String:match'^%s+$' ~= nil or 
+
+#String == 0 or String == '' or false;
 end
 return false
 end
@@ -603,7 +607,6 @@ Color = Color3.new(0, 1, 0);
 Transparency = 1;
 Thickness = 1;
 });
-
 delay(.025, function() -- since zindex doesnt exist
 Menu:AddMenuInstace('Main', NewDrawing'Square'{
 Size = BaseSize;
@@ -1200,4 +1203,3 @@ RunService:BindToRenderStep(UpdateName, 1, Update);
 	Library:ToggleUI()
 end)
     )
-    
