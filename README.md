@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/EuMaiaa/MaiaHub/refs/heads/main/README.md"))()
     local Window = Library.CreateLib("MaiaHub |feito por MAIA", "Sentinel")
 
     local Home = Window:NewTab("Home")
